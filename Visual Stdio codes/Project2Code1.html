@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <title>Sidebar with Hover Effects</title>
+  <style>
+    body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.sidebar {
+  position: fixed;
+  width: 180px;
+  height: 100vh;
+  background-color: #111;
+  overflow-x: hidden;
+  margin-left: -140px;
+  transition: 0.3s;
+}
+
+.sidebar a {
+  padding: 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar i {
+  float: right;
+  margin-left: 10px;
+}
+
+.sidebar:hover {
+  margin-left: 0;
+}
+
+    </style>
+</head>
+<body>
+  <div class="sidebar">
+    <a href="#"><i class="fas fa-home"></i> Home</a>
+    <a href="#"><i class="fas fa-user"></i> Profile</a>
+    <a href="#"><i class="fas fa-envelope"></i> Messages</a>
+    <a href="#"><i class="fas fa-cog"></i> Settings</a>
+  </div>
+</body>
+</html>

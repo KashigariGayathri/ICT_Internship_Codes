@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple To-Do List</title>
+  <style>
+    .completed {
+      text-decoration: line-through;
+    }
+  </style>
+</head>
+<body>
+  <h1> To-Do List</h1>
+  <input type="text" id="taskInput" placeholder="Enter a task">
+  <button onclick="addTask()">Add Task</button>
+  <p><h2>Entered Tasks</h2></p>
+  <ol id="taskList"></ol>
+ 
+
+  <script>
+    function addTask() {
+      var taskInput = document.getElementById("taskInput");
+      var taskList = document.getElementById("taskList");
+      var task = taskInput.value;
+      if (task.trim() !== "") {
+        var li = document.createElement("li");
+        li.innerHTML = task;
+        li.onclick = function() {
+          li.classList.toggle("completed");
+        };
+        taskList.appendChild(li);
+        taskInput.value = "";
+      }
+    }
+  </script>
+</body>
+</html>

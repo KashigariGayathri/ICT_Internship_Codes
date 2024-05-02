@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Gallery</title>
+<style>
+  /* Reset some default styles */
+  body, html {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Image Gallery Styles */
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 100px;
+  }
+
+  .gallery-item {
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+  }
+
+  .gallery-item img {
+    width: 100%;
+    height: 50%;
+  }
+
+  .caption {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+</style>
+</head>
+<body>
+  <p><h1>Here three images are displayed in a row with Captions </h1></p>
+  <div class="gallery">
+    <div class="gallery-item">
+      <img src="ChocolateCake.png" alt="Chocolate Cake">
+      <div class="caption"><h2>Chocolate Cake</h2></div>
+    </div>
+    <div class="gallery-item">
+      <img src="BananaCake.png" alt="Banana Cake">
+      <div class="caption"><h2>Banana Cake</h2></div>
+    </div>
+    <div class="gallery-item">
+      <img src="StrawberryCake.png" alt="Strawberry Cake">
+      <div class="caption"><h2>StrawBerry Cake</h2></div>
+    </div>
+  </div>
+</body>
+</html>
